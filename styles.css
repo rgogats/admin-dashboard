@@ -22,17 +22,11 @@ p {
 
 img.propic-sm {
     height: 45px;
-    padding-right: 10px;
 }
 
 img.propic-lg {
-    height: 80px;
-    padding-right: 10px;
-}
-
-img.icon-sm, svg.icon-sm {
-    height: 20px;
-    background-color: #fff;
+    height: 60px;
+    padding-right:15px;
 }
 
 .sidebar {
@@ -48,13 +42,35 @@ img.icon-sm, svg.icon-sm {
     margin-bottom: 150px;
 }
 
+.sidebar-group>.sidebar-item>svg.icon-sm {
+    padding-right: 10px;
+}
+
 .logo {
-    font-family: cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+.logo>svg {
+    width: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar-item {
     padding: 15px 0px 15px 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sidebar-item>img.icon-sm, .sidebar-item>svg.icon-sm {
+    height: 20px;
+    fill: rgb(255, 255, 255);
+    margin-right: 10px;
 }
 
 .header {
@@ -121,8 +137,19 @@ input[type="search"] {
 button {
     padding: 5px 20px 5px 20px;
     margin-right: 10px;
-    background-color: rgb(122, 0, 162, 0.5);
+    background-color: #ba1464;
+    color:rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 800;
     border-radius: 6px;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(0,0,0);
+}
+
+button:hover {
+    background-color:#3a0000;
+    transition: 0.7s;
 }
 
 .main-content {
@@ -197,10 +224,8 @@ div.card-actions {
     justify-content: end;
 }
 
-div.card>div.card-actions>.card-icon {
-    padding: 5px 10px 5px 10px;
-    margin: 5px 10px 5px 10px;
-    height: 20px;
+svg.card-icon {
+    padding: 0.5rem 0.5rem;
 }
 
 .widget#announcements {
