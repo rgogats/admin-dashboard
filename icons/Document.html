@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./Document_files/styles.css"></head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="">
+                    <svg class="logo" width="59" height="75" viewBox="0 0 375 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M122.5 240H182L272 461.5H18L122.5 240Z" fill="#3A0000"></path>
+                    <line x1="36" y1="200" x2="362" y2="200" stroke="white" stroke-width="10"></line>
+                    <line x1="36" y1="200" x2="362" y2="200" stroke="white" stroke-width="10"></line>
+                    <line x1="36" y1="447" x2="353" y2="447" stroke="white" stroke-width="10"></line>
+                    <line x1="32.9947" y1="446.004" x2="358.7" y2="201.054" stroke="white" stroke-width="10"></line>
+                    <circle cx="28.4568" cy="450.457" r="27.9568" fill="white" stroke="#3A0000"></circle>
+                    <circle cx="345.896" cy="193.457" r="27.9568" fill="white" stroke="#3A0000"></circle>
+                    <circle cx="345.457" cy="450.457" r="27.9568" fill="white" stroke="#3A0000"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M145 278C221.768 278 284 215.768 284 139C284 62.2324 221.768 0 145 0C68.2324 0 6 62.2324 6 139C6 215.768 68.2324 278 145 278ZM163 236C220.99 236 268 188.99 268 131C268 73.0101 220.99 26 163 26C105.01 26 58 73.0101 58 131C58 188.99 105.01 236 163 236Z" fill="#3A0000"></path>
+                    </svg>
+                Admin
+            </div>
+            <div class="sidebar-group sidebar-main">
+                <div class="sidebar-item">Home</div>
+                <div class="sidebar-item">Profile</div>
+                <div class="sidebar-item">Messages</div>
+                <div class="sidebar-item">History</div>
+                <div class="sidebar-item">Tasks</div>
+                <div class="sidebar-item">Communities</div>
+            </div>
+            <div class="sidebar-group sidebar-settings">
+                <div class="sidebar-item">Settings</div>
+                <div class="sidebar-item">Support</div>
+                <div class="sidebar-item">Privacy</div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="searchbar">Search here</div>
+            <div class="notifications">*bell*</div>
+            <div class="profile">Ryan Gogats</div>
+            <div class="welcome">Hi there, Ryan Gogats! (@ryan)</div>
+        </div>
+        <div class="main-content">
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+            <div class="card">Project 4</div>
+            <div class="card">Project 5</div>
+            <div class="card">Project 6</div>
+        </div>
+        <div class="widgets">
+            <ul>
+                <li>Widget 1</li>
+                <li>Widget 2</li>
+                <li>Widget 3</li>
+            </ul>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
